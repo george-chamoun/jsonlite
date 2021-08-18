@@ -55,6 +55,7 @@ test_that("Serializing S4 extending SEXPTYPE", {
     expression(foo),
     parse(text="rnorm(10);"),
     list("1", "2", "3"),
+    list("1"=1, "2"=NA, "3"=Inf, "4"="4", "5"=FALSE),
     mtcars,
     base::matrix(nrow=100, ncol=100)
   )
